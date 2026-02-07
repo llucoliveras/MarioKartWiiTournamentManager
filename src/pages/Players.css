@@ -1,0 +1,146 @@
+.players-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.players-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.players-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.players-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.players-table thead {
+  background: #1e293b;
+  color: white;
+}
+
+.players-table th,
+.players-table td {
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.players-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.players-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.player-name {
+  text-align: left;
+  font-weight: 500;
+}
+
+.rank {
+  font-weight: bold;
+  color: #64748b;
+  margin-right: 8px;
+}
+
+/* ---------------- Sticky header + internal scroll (minimal changes) ---------------- */
+
+/* Limit table height without changing its look */
+.players-card {
+  max-height: 80vh; /* adjust if needed */
+  overflow: hidden;
+}
+
+/* Enable scrolling only inside the table body */
+.players-table tbody {
+  display: block;
+  max-height: 65vh; /* slightly less than card height */
+  overflow-y: auto;
+}
+
+/* Keep table layout intact */
+.players-table thead,
+.players-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* Make header sticky */
+.players-table thead th {
+  position: sticky;
+  top: 0;
+  background: #1e293b; /* exact same header color */
+  z-index: 1;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08); /* subtle polish */
+}
+
+
+/* ---------------- Header & Add Button ---------------- */
+.players-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.add-button {
+  background-color: #1e293b; /* dark blue/gray like table header */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-button:hover {
+  background-color: #334155; /* slightly lighter hover */
+}
+
+/* ---------------- Table action buttons ---------------- */
+.table-actions {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.edit-button,
+.delete-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+}
+
+/* Edit button: same tone as header */
+.edit-button {
+  color: #1e293b;
+}
+
+.edit-button:hover {
+  background: #e2e8f0; /* subtle gray */
+}
+
+/* Delete button: muted danger */
+.delete-button {
+  color: #64748b; /* same tone as rank */
+  margin-left: 4px;
+}
+
+.delete-button:hover {
+  background: #fee2e2; /* soft red */
+  color: #b91c1c;
+}

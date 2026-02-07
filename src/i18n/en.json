@@ -1,0 +1,50 @@
+{
+    "generic": {
+        "cancel": "Cancel",
+        "close": "Close",
+        "save": "Save",
+        "player": "Player"
+    },
+    "history": {
+        "empty": "No games played yet",
+        "lobby": "Lobby #{{lobbyId}}"
+    },
+    "lobby": {
+        "addLobby": "Add Lobby",
+        "cancelGame": "Cancel Game",
+        "cancelGameMessage": "Are you sure you want to cancel the game \"{{game}}\"? All progress will be lost.",
+        "createGame": "Create Game",
+        "deleteLobby": "Delete Lobby",
+        "deleteLobbyMessage": "Are you sure you want to delete this lobby? This action cannot be undone.",
+        "finishGame": "Finish Game",
+        "finishGameMessage": "Are you sure you want to finish the game \"{{game}}\" with the current scores?",
+        "generateGame": "Generate Game",
+        "noGame": "No game in progress",
+        "score": "Score",
+        "searchPlayers": "Search players...",
+        "selectPlayers": "Select up to 4 players",
+        "startGame": "Start Game",
+        "title": "Lobby Title",
+        "scoreEarned": "Score Earned"
+    },
+    "mainNavbar": {
+        "lobbies": "Lobbies",
+        "players": "Players",
+        "history": "History",
+        "settings": "Settings"
+    },
+    "players": {
+        "addPlayer": "Add Player",
+        "confirmDelete": "Are you sure you want to delete the player \"{{player}}\"? This action cannot be undone.",
+        "deletePlayer": "Delete Player",
+        "editPlayer": "Edit Player",
+        "games": "Games",
+        "modify": "Modify",
+        "playerName": "Player Name",
+        "points": "Points"
+    },
+    "settings": {
+        "language": "Language",
+        "title": "Settings"
+    }
+}

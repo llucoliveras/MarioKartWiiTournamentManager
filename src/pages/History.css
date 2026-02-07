@@ -1,0 +1,103 @@
+.history-page {
+  display: flex;           /* make page a flex container */
+  flex-direction: column;  /* stack the title + grid */
+  width: 100%;             /* ensure full width */
+  max-width: 1200px;       /* optional max width */
+  margin: 0 auto;          /* center on page */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+
+.history-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.history-empty {
+  background: #e2e8f0;
+  border-radius: 10px;
+  padding: 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #475569;
+}
+
+.history-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  width: 100%;             /* ensure grid stretches */
+}
+
+.history-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.history-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.history-game-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.history-lobby {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.history-players {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px #e5e7eb;
+}
+
+.history-player-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.history-player-row:last-child {
+  border-bottom: none;
+}
+
+.history-player-row:hover {
+  background: #f8fafc;
+}
+
+.player-rank {
+  width: 32px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.player-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.player-score {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+@media (max-width: 768px) {
+  .history-list {
+    grid-template-columns: 1fr;
+  }
+}

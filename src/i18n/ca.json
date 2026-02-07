@@ -1,0 +1,50 @@
+{
+    "generic": {
+        "cancel": "Cancelar",
+        "close": "Tancar",
+        "save": "Desar",
+        "player": "Jugador"
+    },
+    "history": {
+        "empty": "Encara no s'han jugat partides",
+        "lobby": "Sala #{{lobbyId}}"
+    },
+    "lobby": {
+        "addLobby": "Afegir Sala",
+        "cancelGame": "Cancelar Joc",
+        "cancelGameMessage": "Estàs segur que vols cancel·lar el joc \"{{game}}\"? Tot el progrés es perdran.",
+        "createGame": "Crear Joc",
+        "deleteLobby": "Eliminar Sala",
+        "deleteLobbyMessage": "Estàs segur que vols eliminar aquesta sala? Aquesta acció no es pot desfer.",
+        "finishGame": "Finalitzar Joc",
+        "finishGameMessage": "Estàs segur que vols finalitzar el joc \"{{game}}\" amb les puntuacions actuals?",
+        "generateGame": "Generar Joc",
+        "noGame": "Cap joc en curs",
+        "score": "Puntuació",
+        "searchPlayers": "Cerca jugadors...",
+        "selectPlayers": "Selecciona fins a 4 jugadors",
+        "startGame": "Iniciar Joc",
+        "title": "Títol de la Sala",
+        "scoreEarned": "Puntuació Obtinguda"
+    },
+    "mainNavbar": {
+        "lobbies": "Sales",
+        "players": "Jugadors",
+        "history": "Historial",
+        "settings": "Configuració"
+    },
+    "players": {
+        "addPlayer": "Afegir Jugador",
+        "confirmDelete": "Estàs segur que vols eliminar el jugador \"{{player}}\"? Aquesta acció no es pot desfer.",
+        "deletePlayer": "Eliminar Jugador",
+        "editPlayer": "Editar Jugador",
+        "games": "Partides",
+        "modify": "Modificar",
+        "playerName": "Nom del Jugador",
+        "points": "Punts"
+    },
+    "settings": {
+        "language": "Idioma",
+        "title": "Configuració"
+    }
+}

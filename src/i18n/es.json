@@ -1,0 +1,50 @@
+{
+    "generic": {
+        "cancel": "Cancelar",
+        "close": "Cerrar",
+        "save": "Guardar",
+        "player": "Jugador"
+    },
+    "history": {
+        "empty": "No hay partidas jugadas aún",
+        "lobby": "Sala #{{lobbyId}}"
+    },
+    "lobby": {
+        "addLobby": "Añadir Sala",
+        "cancelGame": "Cancelar Partida",
+        "cancelGameMessage": "¿Estás seguro de que quieres cancelar la partida \"{{game}}\"? Todo el progreso se perderá.",
+        "createGame": "Crear Partida",
+        "deleteLobby": "Eliminar Sala",
+        "deleteLobbyMessage": "¿Estás seguro de que quieres eliminar esta sala? Esta acción no se puede deshacer.",
+        "finishGame": "Finalizar Partida",
+        "finishGameMessage": "¿Estás seguro de que quieres finalizar la partida \"{{game}}\" con las puntuaciones actuales?",
+        "generateGame": "Generar Partida",
+        "noGame": "No hay partida en curso",
+        "score": "Puntuación",
+        "searchPlayers": "Buscar jugadores...",
+        "selectPlayers": "Selecciona hasta 4 jugadores",
+        "startGame": "Iniciar Partida",
+        "title": "Titulo de la Sala",
+        "scoreEarned": "Puntuación Obtenida"
+    },
+    "mainNavbar": {
+        "lobbies": "Salas",
+        "players": "Jugadores",
+        "history": "Historial",
+        "settings": "Configuración"
+    },
+    "players": {
+        "addPlayer": "Añadir Jugador",
+        "confirmDelete": "¿Estás seguro de que quieres eliminar el jugador \"{{player}}\"? Esta acción no se puede deshacer.",
+        "deletePlayer": "Eliminar Jugador",
+        "editPlayer": "Editar Jugador",
+        "games": "Partidas",
+        "modify": "Modificar",
+        "playerName": "Nombre del Jugador",
+        "points": "Puntos"
+    },
+    "settings": {
+        "language": "Idioma",
+        "title": "Configuración"
+    }
+}

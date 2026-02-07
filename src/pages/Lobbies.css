@@ -1,0 +1,66 @@
+.home-page {
+  flex: 1;
+  min-height: 0;
+
+  display: flex;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Container for the sections */
+.home-inner {
+  flex: 1;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .home-inner {
+    flex-direction: column;
+  }
+}
+
+.add-game-button {
+  width: 100%;
+  min-height: 64px;
+  flex-shrink: 0;
+
+  background: #e2e8f0;        /* light slate, visible on white */
+  border: 2px dashed #94a3b8;
+  color: #1e293b;
+
+  border-radius: 10px;
+  font-size: 0.95rem;         /* smaller by default */
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.add-game-button:hover {
+  background: #cbd5e1;
+  border-color: #64748b;
+}
+
+.add-game-button.empty {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.4rem;          /* bigger text when no games */
+  font-weight: 600;
+}
+
+.games-row {
+  flex: 1;
+  min-height: 0;
+
+  display: flex;
+  gap: 1.5rem;
+}
