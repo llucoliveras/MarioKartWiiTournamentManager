@@ -6,7 +6,7 @@ import "./App.css";
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/MarioKartWiiTournamentManager">
 			<div className="app-root">
 				<MainNavbar style={{ padding: "1rem" }}>
 					<Link to="/lobbies">Lobbies</Link> |{" "}
