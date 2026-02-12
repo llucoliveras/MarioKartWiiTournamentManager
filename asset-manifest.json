@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MarioKartWiiTournamentManager/static/css/main.a50442ee.css",
+    "main.js": "/MarioKartWiiTournamentManager/static/js/main.cb4661f5.js",
+    "static/js/453.f26b7c56.chunk.js": "/MarioKartWiiTournamentManager/static/js/453.f26b7c56.chunk.js",
+    "index.html": "/MarioKartWiiTournamentManager/index.html",
+    "main.a50442ee.css.map": "/MarioKartWiiTournamentManager/static/css/main.a50442ee.css.map",
+    "main.cb4661f5.js.map": "/MarioKartWiiTournamentManager/static/js/main.cb4661f5.js.map",
+    "453.f26b7c56.chunk.js.map": "/MarioKartWiiTournamentManager/static/js/453.f26b7c56.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a50442ee.css",
+    "static/js/main.cb4661f5.js"
+  ]
+}
