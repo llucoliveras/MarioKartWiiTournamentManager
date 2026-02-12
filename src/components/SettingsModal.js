@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./GenericModal.css";
 import { useTranslation } from "react-i18next";
 
@@ -8,6 +9,11 @@ const SettingsModal = ({ handleSaveSettings, setShowModal, settings, setSettings
         if (localStorage.settings !== JSON.stringify(settings)) setSettings(JSON.parse(localStorage.settings));
         setShowModal(false);
     }
+
+    useEffect(() => {
+        if (localStorage.settings == null || localStorage.settings == undefined)
+            setSettings(settings => { return {...settings, language: "en"} })
+    }, [])
 
     return <div className="modal-backdrop">
         <div className="modal">

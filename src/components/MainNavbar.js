@@ -9,7 +9,7 @@ const MainNavbar = ({ active }) => {
 	const { t } = useTranslation();
 	const navigate = useNavigate();
 	const [showSettings, setShowSettings] = useState(false);
-	const [settings, setSettings] = useState(localStorage.settings ? JSON.parse(localStorage.settings) : {});
+	const [settings, setSettings] = useState((localStorage.settings && localStorage.settings !== undefined) ? JSON.parse(localStorage.settings) : {});
 	const items = [
 		{ id: "lobbies", label: t("mainNavbar.lobbies") },
 		{ id: "players", label: t("mainNavbar.players") },
