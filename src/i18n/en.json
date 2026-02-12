@@ -20,6 +20,7 @@
         "finishGameMessage": "Are you sure you want to finish the game \"{{game}}\" with the current scores?",
         "generateGame": "Generate Game",
         "noGame": "No game in progress",
+        "noPlayers": "There's no players to play in the lobby, create some before starting a game",
         "score": "Score",
         "searchPlayers": "Search players...",
         "selectPlayers": "Select up to 4 players",

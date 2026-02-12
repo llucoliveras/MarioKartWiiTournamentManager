@@ -20,6 +20,7 @@
         "finishGameMessage": "Estàs segur que vols finalitzar el joc \"{{game}}\" amb les puntuacions actuals?",
         "generateGame": "Generar Joc",
         "noGame": "Cap joc en curs",
+        "noPlayers": "No hi ha jugadors per jugar a la sala, crea alguns abans de començar el joc",
         "score": "Puntuació",
         "searchPlayers": "Cerca jugadors...",
         "selectPlayers": "Selecciona fins a 4 jugadors",

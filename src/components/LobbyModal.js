@@ -77,50 +77,54 @@ const LobbyModal = ({ modal, players, setModal, modalType, modalAdditionalData, 
             : modalType == "start" ?
                 <>
                     <h2>{t("lobby.createGame")}</h2>
+                    
+                    {players.length <= 0
+                        ? <label>{t("lobby.noPlayers")}</label>
+                        : <div className="player-picker">
+                            <label>{t("lobby.selectPlayers")}</label>
 
-                    <div className="player-picker">
-                        <label>{t("lobby.selectPlayers")}</label>
-
-                        {/* Selected chips */}
-                        <div className="selected-chips">
-                            {selectedPlayers.map(player => (
-                                <span key={player.id} className="chip">
-                                    {player.name}
-                                    <button onClick={() => togglePlayer(player)}>×</button>
-                                </span>
-                            ))}
-                        </div>
-
-                        {/* Search */}
-                        <input
-                            type="text"
-                            placeholder={t("lobby.searchPlayers")}
-                            value={search}
-                            onChange={e => setSearch(e.target.value)}
-                        />
-
-                        {/* Results */}
-                        <div className="player-results">
-                            {filteredPlayers.map(player => {
-                                const selected = selectedPlayers.some(p => p.id === player.id);
-                                const disabled = !selected && selectedPlayers.length >= 4;
-
-                                return (
-                                    <div
-                                        key={player.id}
-                                        className={`player-row ${selected ? "selected" : ""} ${disabled ? "disabled" : ""}`}
-                                        onClick={() => !disabled && togglePlayer(player)}
-                                    >
+                            {/* Selected chips */}
+                            <div className="selected-chips">
+                                {selectedPlayers.map(player => (
+                                    <span key={player.id} className="chip">
                                         {player.name}
-                                    </div>
-                                );
-                            })}
+                                        <button onClick={() => togglePlayer(player)}>×</button>
+                                    </span>
+                                ))}
+                            </div>
+
+                            {/* Search */}
+                            <input
+                                type="text"
+                                placeholder={t("lobby.searchPlayers")}
+                                value={search}
+                                onChange={e => setSearch(e.target.value)}
+                            />
+
+                            {/* Results */}
+                            <div className="player-results">
+                                {filteredPlayers.map(player => {
+                                    const selected = selectedPlayers.some(p => p.id === player.id);
+                                    const disabled = !selected && selectedPlayers.length >= 4;
+
+                                    return (
+                                        <div
+                                            key={player.id}
+                                            className={`player-row ${selected ? "selected" : ""} ${disabled ? "disabled" : ""}`}
+                                            onClick={() => !disabled && togglePlayer(player)}
+                                        >
+                                            {player.name}
+                                        </div>
+                                    );
+                                })}
+                            </div>
                         </div>
-                    </div>
+                    }
 
 
                     <div className="modal-buttons">
                         <button
+                            hidden={selectedPlayers.length <= 0}
                             onClick={() => {
                                 handleCreateGame(selectedPlayers);
                                 closeModal();
