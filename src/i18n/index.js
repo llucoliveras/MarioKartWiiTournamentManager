@@ -6,7 +6,7 @@ import en from "./en.json";
 import es from "./es.json";
 import ca from "./ca.json";
 
-const savedLanguage = localStorage.getItem("language") || "en";
+const savedLanguage = localStorage.getItem("settings") ? JSON.parse(localStorage.getItem("settings")).language : "en";
 
 i18n
   .use(initReactI18next)
