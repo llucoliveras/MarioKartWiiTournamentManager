@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Lobby.css";
 import { useTranslation } from "react-i18next";
 
@@ -17,6 +17,10 @@ const Lobby = ({game, players, setShowModal, setModalType, setModalLobby, handle
         if (newScore < 0) newScore = 0;
         setLivePlayers(prev => prev.map(p => p.id === playerId ? { ...p, score: newScore } : p));
     };
+
+    useEffect(() => {
+        setLivePlayers(players.filter(player => game.players.some(gplayer => gplayer.id === player.id)));
+    }, [game.players, players]);
 
     return (
         <div key={game.id} className="game-section">
